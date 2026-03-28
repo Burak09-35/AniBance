@@ -123,4 +123,4 @@ func _on_button_restart_pressed() -> void:
 
 
 func _on_button_animals_page_pressed() -> void:
-	get_tree().change_scene_to_file("res://Animals.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Animals.tscn")

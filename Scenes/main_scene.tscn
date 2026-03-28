@@ -49,7 +49,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(540, 1372)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Static Wood"]
-position = Vector2(0, 414)
+position = Vector2(0, 413)
 scale = Vector2(5, 5)
 shape = SubResource("CircleShape2D_fl3ga")
 
@@ -58,9 +58,15 @@ position = Vector2(0, 248.5)
 scale = Vector2(1.59961, 1.50684)
 texture = ExtResource("2_smikq")
 
+[node name="Sprite2D2" type="Sprite2D" parent="Control/Static Wood"]
+position = Vector2(-2.33413e-12, 577)
+rotation = 3.14159
+scale = Vector2(1.59961, 1.50684)
+texture = ExtResource("2_smikq")
+
 [node name="Balancestick" type="RigidBody2D" parent="Control"]
 position = Vector2(540, 1532)
-mass = 40.0
+mass = 20.0
 gravity_scale = 0.5
 script = ExtResource("1_0bn5i")
 
@@ -101,7 +107,8 @@ anchor_right = 0.592593
 anchor_bottom = 0.0854167
 grow_horizontal = 2
 grow_vertical = 2
-text = "Restart"
+text = "Animals
+"
 metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="Control/UI/ButtonAnimalsPage"]

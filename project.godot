@@ -32,6 +32,16 @@ window/stretch/mode="viewport"
 window/handheld/orientation=1
 window/main_scene="res://Scenes/OpeningScreen.tscn"
 
+[file_customization]
+
+folder_colors={
+"res://Music and SFX/": "purple",
+"res://Scenes/": "yellow",
+"res://Scripts/": "red",
+"res://Textures/": "green",
+"res://android/": "blue"
+}
+
 [physics]
 
 2d/default_gravity=500.0

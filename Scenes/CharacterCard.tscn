@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://7ekrk4lo6u2j"]
 
-[ext_resource type="Script" path="res://character_card.gd" id="1_0ma4f"]
+[ext_resource type="Script" path="res://Scripts/character_card.gd" id="1_0ma4f"]
 [ext_resource type="Texture2D" uid="uid://gxhd35tke152" path="res://Textures/bird2.png" id="2_hdthw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2k01"]

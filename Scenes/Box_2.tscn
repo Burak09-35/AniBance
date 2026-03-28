@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://db3v5cjkvx0fu" path="res://Scenes/Box_1.tscn" id="1_wwhip"]
 [ext_resource type="Script" path="res://Scripts/box_2.gd" id="2_qyy81"]
-[ext_resource type="Texture2D" uid="uid://c5n8vmcrs1xxy" path="res://maynun(resized).png" id="3_qc084"]
+[ext_resource type="Texture2D" uid="uid://c5n8vmcrs1xxy" path="res://Textures/maynun(resized).png" id="3_qc084"]
 
 [node name="RigidBody2D" instance=ExtResource("1_wwhip")]
 mass = 2.0

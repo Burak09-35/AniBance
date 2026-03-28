@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d13xelfoyjqaa"
-path="res://.godot/imported/domuz.png-b4ca316d82defc9ddf734cc173d77a30.ctex"
+uid="uid://didegwgcxq12s"
+path="res://.godot/imported/domuz(resized).png-1875c5b024b12616ef05cda03c8ec6c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://domuz.png"
-dest_files=["res://.godot/imported/domuz.png-b4ca316d82defc9ddf734cc173d77a30.ctex"]
+source_file="res://Textures/domuz(resized).png"
+dest_files=["res://.godot/imported/domuz(resized).png-1875c5b024b12616ef05cda03c8ec6c3.ctex"]
 
 [params]
 

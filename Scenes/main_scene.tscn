@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b1dpsi4jhhrb1" path="res://Textures/Untitled (5).png" id="7_bqtxw"]
 [ext_resource type="AudioStream" uid="uid://ci2114mfuc8gr" path="res://Music and SFX/768967__mellotrix9898__doodle.wav" id="7_s3yy1"]
 [ext_resource type="Texture2D" uid="uid://7mgtb3edwrkt" path="res://Textures/waweforMygame.png" id="8_vm6dr"]
-[ext_resource type="Texture2D" uid="uid://dfeqaelx5if6h" path="res://Untitled (8).png" id="9_5djfa"]
+[ext_resource type="Texture2D" uid="uid://dfeqaelx5if6h" path="res://Textures/Untitled (8).png" id="9_5djfa"]
 [ext_resource type="Texture2D" uid="uid://xosppp7yi556" path="res://Textures/643fbae7-2759-4aae-83a0-386c1effef1b.png" id="10_hcwx2"]
 [ext_resource type="Script" path="res://Scenes/audio_stream_player_2d_2.gd" id="10_s4a6r"]
 

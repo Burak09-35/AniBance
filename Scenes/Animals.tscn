@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://dwrx1jil7asn0"]
 
 [ext_resource type="Texture2D" uid="uid://xosppp7yi556" path="res://Textures/643fbae7-2759-4aae-83a0-386c1effef1b.png" id="1_0708w"]
-[ext_resource type="Script" path="res://Main.gd" id="1_orjiq"]
-[ext_resource type="Script" path="res://animalsPage.gd" id="1_qydjl"]
+[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_orjiq"]
+[ext_resource type="Script" path="res://Scripts/animalsPage.gd" id="1_qydjl"]
 [ext_resource type="Texture2D" uid="uid://detqgoyuuam1c" path="res://Textures/Untitled (23).png" id="3_hpcau"]
 [ext_resource type="AudioStream" uid="uid://ffi2wln4egw0" path="res://Music and SFX/MygAMEvOİCE.mp3" id="5_25iys"]
 [ext_resource type="Script" path="res://Scenes/audio_stream_player_2d.gd" id="6_3lql2"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d511ixdg0xfg"
-path="res://.godot/imported/elephant.png-c1b26ad20ee64906f8d78f80e0fb5532.ctex"
+uid="uid://c5n8vmcrs1xxy"
+path="res://.godot/imported/maynun(resized).png-22e4e405f4e33c12a7b8216d616f15c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://elephant.png"
-dest_files=["res://.godot/imported/elephant.png-c1b26ad20ee64906f8d78f80e0fb5532.ctex"]
+source_file="res://Textures/maynun(resized).png"
+dest_files=["res://.godot/imported/maynun(resized).png-22e4e405f4e33c12a7b8216d616f15c5.ctex"]
 
 [params]
 

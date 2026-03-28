@@ -1,0 +1,210 @@
+[gd_scene load_steps=17 format=3 uid="uid://csk7leeea2436"]
+
+[ext_resource type="Script" path="res://Scripts/rigid_body_2d.gd" id="1_0bn5i"]
+[ext_resource type="Script" path="res://Scripts/main_scene.gd" id="1_mqcrd"]
+[ext_resource type="Texture2D" uid="uid://ch67x26sobp0s" path="res://Textures/staticodunForgame.png" id="2_smikq"]
+[ext_resource type="Texture2D" uid="uid://cnqcc4xwisbgl" path="res://Textures/odundorMygame.png" id="4_6tp03"]
+[ext_resource type="Texture2D" uid="uid://b1rl6j1oa8tmp" path="res://Textures/Untitled (24).png" id="4_nngey"]
+[ext_resource type="Texture2D" uid="uid://detqgoyuuam1c" path="res://Textures/Untitled (23).png" id="5_7eefw"]
+[ext_resource type="AudioStream" uid="uid://clmq7ncptb6i" path="res://Music and SFX/404743__owlstorm__retro-video-game-sfx-fail.wav" id="6_ltmif"]
+[ext_resource type="Texture2D" uid="uid://b1dpsi4jhhrb1" path="res://Textures/Untitled (5).png" id="7_bqtxw"]
+[ext_resource type="AudioStream" uid="uid://ci2114mfuc8gr" path="res://Music and SFX/768967__mellotrix9898__doodle.wav" id="7_s3yy1"]
+[ext_resource type="Texture2D" uid="uid://7mgtb3edwrkt" path="res://Textures/waweforMygame.png" id="8_vm6dr"]
+[ext_resource type="Texture2D" uid="uid://dfeqaelx5if6h" path="res://Untitled (8).png" id="9_5djfa"]
+[ext_resource type="Texture2D" uid="uid://xosppp7yi556" path="res://Textures/643fbae7-2759-4aae-83a0-386c1effef1b.png" id="10_hcwx2"]
+[ext_resource type="Script" path="res://Scenes/audio_stream_player_2d_2.gd" id="10_s4a6r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fl3ga"]
+radius = 28.6007
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dmus0"]
+size = Vector2(41.5, 46.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bh5i"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_mqcrd")
+
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(33, 18)
+stream = ExtResource("6_ltmif")
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_s3yy1")
+script = ExtResource("10_s4a6r")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Static Wood" type="StaticBody2D" parent="Control"]
+position = Vector2(540, 1372)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Static Wood"]
+position = Vector2(0, 414)
+scale = Vector2(5, 5)
+shape = SubResource("CircleShape2D_fl3ga")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Static Wood"]
+position = Vector2(0, 248.5)
+scale = Vector2(1.59961, 1.50684)
+texture = ExtResource("2_smikq")
+
+[node name="Balancestick" type="RigidBody2D" parent="Control"]
+position = Vector2(540, 1532)
+mass = 40.0
+gravity_scale = 0.5
+script = ExtResource("1_0bn5i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Balancestick"]
+position = Vector2(0, -16.5)
+scale = Vector2(20, 2)
+shape = SubResource("RectangleShape2D_dmus0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Balancestick"]
+position = Vector2(0, 17)
+scale = Vector2(0.991836, 0.966797)
+texture = ExtResource("4_6tp03")
+
+[node name="UI" type="CanvasLayer" parent="Control"]
+layer = 0
+
+[node name="ButtonRestart" type="Button" parent="Control/UI"]
+anchors_preset = -1
+anchor_left = 0.0768519
+anchor_top = 0.0270833
+anchor_right = 0.248148
+anchor_bottom = 0.08125
+grow_horizontal = 2
+grow_vertical = 2
+text = "Restart"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control/UI/ButtonRestart"]
+position = Vector2(94.5, 66.5)
+scale = Vector2(0.569444, 0.55799)
+texture = ExtResource("4_nngey")
+
+[node name="ButtonAnimalsPage" type="Button" parent="Control/UI"]
+anchors_preset = -1
+anchor_left = 0.421296
+anchor_top = 0.0279167
+anchor_right = 0.592593
+anchor_bottom = 0.0854167
+grow_horizontal = 2
+grow_vertical = 2
+text = "Restart"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="Control/UI/ButtonAnimalsPage"]
+position = Vector2(91, 68)
+scale = Vector2(0.562098, 0.55799)
+texture = ExtResource("9_5djfa")
+
+[node name="ButtonExit" type="Button" parent="Control/UI"]
+anchors_preset = -1
+anchor_left = 0.75463
+anchor_top = 0.0266667
+anchor_right = 0.926852
+anchor_bottom = 0.0804167
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/UI/ButtonExit"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(94.0937, 67.8594)
+scale = Vector2(0.589944, 0.557064)
+texture = ExtResource("5_7eefw")
+
+[node name="ScoreLabel" type="Label" parent="Control/UI"]
+anchors_preset = -1
+anchor_left = 0.47963
+anchor_top = 0.02875
+anchor_right = 0.532407
+anchor_bottom = 0.0858333
+offset_left = 429.0
+offset_top = 231.0
+offset_right = 429.0
+offset_bottom = 231.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="SpawnPoint" type="Marker2D" parent="Control"]
+position = Vector2(547, 331)
+
+[node name="TargetDot" type="Sprite2D" parent="Control"]
+position = Vector2(555, 333)
+scale = Vector2(0.480882, 0.496323)
+texture = ExtResource("7_bqtxw")
+
+[node name="DeadLine" type="Area2D" parent="Control"]
+position = Vector2(543, 2262)
+scale = Vector2(1.96, 2.07999)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/DeadLine"]
+scale = Vector2(300, 4)
+shape = SubResource("RectangleShape2D_0bh5i")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/DeadLine"]
+position = Vector2(-1, -132)
+scale = Vector2(1.4, 1)
+texture = ExtResource("8_vm6dr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Control"]
+
+[node name="RedOverlay" type="ColorRect" parent="Control/CanvasLayer"]
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.368627, 0, 0)
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.325
+anchor_top = -17.275
+anchor_right = 66.9
+anchor_bottom = 53.875
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/TextureRect"]
+modulate = Color(1, 1, 1, 0.490196)
+z_index = -5
+position = Vector2(1101, 3183)
+scale = Vector2(3.57811, 3.27062)
+texture = ExtResource("10_hcwx2")
+
+[node name="TextureRectPreview" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 10.9
+anchor_top = 42.15
+anchor_right = 23.25
+anchor_bottom = 54.375
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
+[connection signal="pressed" from="Control/UI/ButtonRestart" to="." method="_on_button_restart_pressed"]
+[connection signal="pressed" from="Control/UI/ButtonAnimalsPage" to="." method="_on_button_animals_page_pressed"]
+[connection signal="pressed" from="Control/UI/ButtonExit" to="." method="_on_button_exit_pressed"]

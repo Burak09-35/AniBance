@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b5k35formbmmh"
+path="res://.godot/imported/177253__josephsardin__cow-moos.wav-1ab15c36858a8874f82d0ca543692a42.sample"
+
+[deps]
+
+source_file="res://Music and SFX/177253__josephsardin__cow-moos.wav"
+dest_files=["res://.godot/imported/177253__josephsardin__cow-moos.wav-1ab15c36858a8874f82d0ca543692a42.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

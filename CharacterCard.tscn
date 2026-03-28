@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=3 uid="uid://7ekrk4lo6u2j"]
+
+[ext_resource type="Script" path="res://character_card.gd" id="1_0ma4f"]
+[ext_resource type="Texture2D" uid="uid://gxhd35tke152" path="res://Textures/bird2.png" id="2_hdthw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2k01"]
+bg_color = Color(0.396078, 0.6, 0.6, 1)
+
+[sub_resource type="Theme" id="Theme_ngwre"]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_x2k01")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rs8wc"]
+bg_color = Color(0.889128, 0.845637, 0.835713, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.742598, 0.658257, 0.635227, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0ma4f")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 0
+anchor_left = 0.0888889
+anchor_top = 0.0416667
+anchor_right = 0.914815
+anchor_bottom = 0.220833
+offset_right = 3.05176e-05
+theme = SubResource("Theme_ngwre")
+theme_override_styles/panel = SubResource("StyleBoxFlat_rs8wc")
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125926
+anchor_top = 0.0583333
+anchor_right = 0.85
+anchor_bottom = 0.201042
+offset_left = -30.0
+theme_override_constants/separation = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginTextureRect" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 100
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/MarginTextureRect"]
+custom_minimum_size = Vector2(260, 260)
+layout_mode = 2
+texture = ExtResource("2_hdthw")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 30
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/MarginContainer"]
+z_index = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "asdfasd"
+
+[node name="SizeContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 30
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/SizeContainer"]
+z_index = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "asdfasd"
+
+[node name="ScoreContainer" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 30
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/ScoreContainer"]
+z_index = 2
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "asdfasd"

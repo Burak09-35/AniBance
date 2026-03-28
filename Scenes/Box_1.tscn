@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://db3v5cjkvx0fu"]
+
+[ext_resource type="Script" path="res://Scripts/box_1.gd" id="1_r6rlc"]
+[ext_resource type="Texture2D" uid="uid://bm5m648pmakc7" path="res://bird2(resized).png" id="2_jh4bm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqo0e"]
+size = Vector2(20, 19.6667)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_r6rlc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+scale = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_dqo0e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -4)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("2_jh4bm")

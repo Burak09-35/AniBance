@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b8k5hvqgc3c2t"
+path="res://.godot/imported/768470__skriptico__fume-checking-out-ostirus-from-usual-suspects.wav-6e2837d45b03dbb6ff9e61270623af5e.sample"
+
+[deps]
+
+source_file="res://Music and SFX/768470__skriptico__fume-checking-out-ostirus-from-usual-suspects.wav"
+dest_files=["res://.godot/imported/768470__skriptico__fume-checking-out-ostirus-from-usual-suspects.wav-6e2837d45b03dbb6ff9e61270623af5e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

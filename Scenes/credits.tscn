@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=3 uid="uid://dr6gdya6nee61"]
+
+[ext_resource type="Script" path="res://Scenes/credits.gd" id="1_cu7mp"]
+[ext_resource type="Texture2D" uid="uid://xosppp7yi556" path="res://Textures/643fbae7-2759-4aae-83a0-386c1effef1b.png" id="2_j8bjn"]
+[ext_resource type="Texture2D" uid="uid://detqgoyuuam1c" path="res://Textures/Untitled (23).png" id="3_h2gnn"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.60512, 2.34017)
+mouse_filter = 2
+script = ExtResource("1_cu7mp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.423529)
+position = Vector2(386, 1130)
+scale = Vector2(2.42188, 2.3776)
+texture = ExtResource("2_j8bjn")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.0
+offset_top = -380.0
+offset_right = 214.0
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 13
+text = "🎧 Credits – Sound Effects
+The following sound effects were used under the Creative Commons
+ Attribution 3.0 license (CC BY 3.0):
+
+\"Retro Game Sounds\" by JosephSardin
+https://freesound.org/people/JosephSardin/sounds/177253/
+
+Various sounds by magedu
+https://freesound.org/people/magedu/
+
+\"Power Up Sound\" by OwlStorm
+https://freesound.org/people/OwlStorm/sounds/404743/
+
+\"Background Ambience\" by klankbeeld
+https://freesound.org/people/klankbeeld/sounds/622635/
+
+\"Click UI Sound\" by skriptico
+https://freesound.org/people/skriptico/sounds/768470/
+
+\"Game Over Sound\" by mellotrix9898
+https://freesound.org/people/mellotrix9898/sounds/768967/
+
+All sounds are licensed under Creative Commons Attribution License.
+https://creativecommons.org/licenses/by/3.0/"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.0
+offset_top = 232.0
+offset_right = 59.0
+offset_bottom = 330.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+position = Vector2(74, 50)
+scale = Vector2(0.439103, 0.448454)
+texture = ExtResource("3_h2gnn")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

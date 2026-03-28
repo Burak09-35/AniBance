@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1brh1d8drsdt"
+path="res://.godot/imported/622635__klankbeeld__eating-and-bleating-sheep-02-200426_0166.wav-b5ac3209917031302d4d6465b700ca67.sample"
+
+[deps]
+
+source_file="res://Music and SFX/622635__klankbeeld__eating-and-bleating-sheep-02-200426_0166.wav"
+dest_files=["res://.godot/imported/622635__klankbeeld__eating-and-bleating-sheep-02-200426_0166.wav-b5ac3209917031302d4d6465b700ca67.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=3 uid="uid://crwooro1qvdkx"]
+
+[ext_resource type="Script" path="res://Scripts/opening_screen.gd" id="1_nwge3"]
+[ext_resource type="Texture2D" uid="uid://dkl6job8inc28" path="res://Textures/Untitled (2).png" id="2_f4bos"]
+[ext_resource type="AudioStream" uid="uid://ffi2wln4egw0" path="res://Music and SFX/MygAMEvOİCE.mp3" id="3_6d26i"]
+[ext_resource type="Script" path="res://Scenes/audio_stream_player_2d.gd" id="4_6o2mp"]
+[ext_resource type="Texture2D" uid="uid://b6pb2jmkingau" path="res://Textures/a0ddd38d-9142-4971-984a-f52be350d2cb.png" id="4_x1k56"]
+[ext_resource type="Texture2D" uid="uid://bn2djoylqw6wh" path="res://Textures/Untitled (1).png" id="6_74mgq"]
+[ext_resource type="Texture2D" uid="uid://cj25wwak64dtq" path="res://Textures/Untitled (6).png" id="7_72wxi"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.999999, 1)
+script = ExtResource("1_nwge3")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.303704
+anchor_top = 0.729583
+anchor_right = 0.734259
+anchor_bottom = 0.823333
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="Button"]
+position = Vector2(229.5, 110)
+scale = Vector2(1.00658, 1.22893)
+texture = ExtResource("2_f4bos")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_6d26i")
+script = ExtResource("4_6o2mp")
+
+[node name="ButtonCredits" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.386111
+anchor_top = 0.857083
+anchor_right = 0.639419
+anchor_bottom = 0.921552
+offset_right = -1.57166
+offset_bottom = -0.723877
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.00578, 1.0047)
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ButtonCredits"]
+position = Vector2(135.219, 76.6398)
+scale = Vector2(0.78287, 0.710577)
+texture = ExtResource("7_72wxi")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.025
+anchor_right = 1.04259
+anchor_bottom = 0.994167
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="TextureRect"]
+z_index = -2
+position = Vector2(538, 1198.75)
+scale = Vector2(1.14649, 1.56543)
+texture = ExtResource("4_x1k56")
+
+[node name="Pufyastik" type="Sprite2D" parent="TextureRect"]
+position = Vector2(309, 524)
+scale = Vector2(1.02385, 0.933716)
+texture = ExtResource("6_74mgq")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ButtonCredits" to="." method="_on_button_credits_pressed"]

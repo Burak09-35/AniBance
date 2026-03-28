@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clmq7ncptb6i"
+path="res://.godot/imported/404743__owlstorm__retro-video-game-sfx-fail.wav-be990fc56e8ab2680a93c5b4fb3829f3.sample"
+
+[deps]
+
+source_file="res://Music and SFX/404743__owlstorm__retro-video-game-sfx-fail.wav"
+dest_files=["res://.godot/imported/404743__owlstorm__retro-video-game-sfx-fail.wav-be990fc56e8ab2680a93c5b4fb3829f3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

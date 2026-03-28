@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnh8dmf4led4"]
+
+[ext_resource type="PackedScene" uid="uid://db3v5cjkvx0fu" path="res://Scenes/Box_1.tscn" id="1_52sf6"]
+[ext_resource type="Script" path="res://Scripts/box_3.gd" id="2_jof1g"]
+[ext_resource type="Texture2D" uid="uid://didegwgcxq12s" path="res://domuz(resized).png" id="3_kqqar"]
+
+[node name="RigidBody2D" instance=ExtResource("1_52sf6")]
+mass = 3.0
+script = ExtResource("2_jof1g")
+point_value = 3
+
+[node name="CollisionShape2D" parent="." index="0"]
+scale = Vector2(10, 10)
+
+[node name="Sprite2D" parent="." index="1"]
+position = Vector2(1.00002, 1.99999)
+scale = Vector2(0.468, 0.464)
+texture = ExtResource("3_kqqar")
